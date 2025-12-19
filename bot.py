@@ -130,7 +130,7 @@ if __name__ == "__main__":
     if not BOT_TOKEN:
         raise RuntimeError("❌ Chưa set BOT_TOKEN trong ENV")
 
-    WEBHOOK_URL = f"https://YOUR-APP-NAME.onrender.com{WEBHOOK_PATH}"
+    WEBHOOK_URL = "https://royalanan-bot.onrender.com/webhook/" + BOT_TOKEN
     application.bot.set_webhook(WEBHOOK_URL)
 
     flask_app.run(host="0.0.0.0", port=PORT)
